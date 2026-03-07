@@ -32,5 +32,7 @@ A Python-based IP geolocation utility that resolves domain names and queries geo
    git clone https://github.com/jack9038/Tools.git
    cd Tools
 2.python3 --version
+
 3.python3 GeoLocate.py --help
+
 4.python3 GeoLocate.py --url example.com
