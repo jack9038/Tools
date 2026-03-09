@@ -167,9 +167,13 @@ class Locator(object):
                 print(f'  Latitude         : {response.location.latitude}')
                 print(f'  Longitude        : {response.location.longitude}')
                 print(f'  Time Zone        : {response.location.time_zone}')
-                print(f'City subdivisions: {response.subdivisions.most_specific}')
+                print(f'City subdivisions: {response.subdivisions.most_specific}\n')
 
-            print('\n[*] Query Complete!')
+                print('\n[***********************]  GeoLite Data Query Complete [***********************]')
+            import subprocess
+            data = subprocess.run(['curl','ipinfo.io/',self.target])
+            print('\n[***********************]  Ipinfo Data Query Complete [***********************]')
+            exit()
 
         except geoip2.errors.AddressNotFoundError:
             print(f'\n[!] IP address {self.target} not found in database')
