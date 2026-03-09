@@ -102,8 +102,8 @@ class Locator(object):
             print('[*] Downloading...')
             result = subprocess.run([
                 'sudo', 'wget', '--content-disposition',
-                '--user=1309143',
-                '--password=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',
+                '--user=',
+                '--password=',
                 '-O', tar_gz_path,
                 'https://download.maxmind.com/geoip/databases/GeoLite2-City/download?suffix=tar.gz'
             ])
